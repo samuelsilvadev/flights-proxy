@@ -1,0 +1,19 @@
+{
+  "name": "flights-proxy",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "^1.2.2",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "bun --watch index.ts",
+    "format": "bun biome format . --write"
+  },
+  "dependencies": {
+    "elysia": "^0.7.14"
+  }
+}
