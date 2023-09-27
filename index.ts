@@ -1,4 +1,5 @@
 import { Elysia } from "elysia";
+import { getAirlinesHandler } from "./src/handlers/airlines";
 
 new Elysia()
 	.get("/", () => {
@@ -9,4 +10,5 @@ new Elysia()
 			{ headers: { "Content-Type": "application/json" } },
 		);
 	})
+	.get("/airlines", getAirlinesHandler)
 	.listen(3000);
